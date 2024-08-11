@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Odin Library</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bookshelf</title><path d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z" /></svg>
+            <h1>Library</h1>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h2>Add new book:</h2>
+        <form action="" id="form">
+            <ul class="form" id="formFields">
+                <li>
+                    <label for="title">Title (required):</label>
+                    <input type="text" id="title" required>
+                </li>
+                <li>
+                    <label for="author">Author (required):</label>
+                    <input type="text" id="author" required>
+                </li>
+                <li>
+                    <label for="pages">Pages (required):</label>
+                    <input type="text" id="pages" required>
+                </li>
+                <li class="coverURL">
+                    <label for="coverURL">Cover image URL:</label>
+                    <input type="text" id="coverURL">
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" id="read">
+                    <label for="read">Already read</label>
+                </li>
+                <li>
+                    <p id="msg"></p>
+                    <button id="submit" type="submit">+ Add</button>
+                </li>
+            </ul>
+            <div id="doneBlock">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>check-circle-outline</title><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" /></svg>
+                <p>Done!</p>
+                <button id="reset">Click to add more</button>
+            </div>     
+        </form>  
+    </div>
+    <div class="cards" id="cards">
+    </div>
+</body>
+</html>
